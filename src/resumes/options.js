@@ -55,6 +55,10 @@ function getVueOptions (name) {
                     links.linkedin = `https://linkedin.com/in/${this.person.contact.linkedin}`;
                 }
 
+                if(this.person.contact.xing) {
+                    links.xing = `https://xing.com/profile/${this.person.contact.xing}/cv`;
+                }
+
                 if(this.person.contact.phone) {
                     links.phone = `tel:${this.person.contact.phone}`;
                 }

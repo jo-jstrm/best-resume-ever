@@ -142,6 +142,14 @@
         </div>
       </router-link>
     </div>
+    <div class="preview">
+      <router-link v-bind:to="'/resume/material-dark-custom'">
+        <div class="preview-wrapper">
+          <img src="../assets/preview/resume-material-dark-custom.png" />
+          <span>material-dark-custom</span>
+        </div>
+      </router-link>
+    </div>
   </div>
 </div>
 </template>

@@ -47,30 +47,6 @@
       </router-link>
     </div>
     <div class="preview">
-      <router-link v-bind:to="'/resume/oblique'">
-        <div class="preview-wrapper">
-          <img src="../assets/preview/resume-oblique.png" />
-          <span>oblique</span>
-        </div>
-      </router-link>
-    </div>
-    <div class="preview">
-      <router-link v-bind:to="'/resume/oblique-projects'">
-        <div class="preview-wrapper">
-          <img src="../assets/preview/resume-oblique-projects.png" />
-          <span>oblique-projects</span>
-        </div>
-      </router-link>
-    </div>
-    <div class="preview">
-        <router-link v-bind:to="'/resume/oblique-rtl'">
-            <div class="preview-wrapper">
-                <img src="../assets/preview/resume-oblique-rtl.png" />
-                <span>oblique-rtl</span>
-            </div>
-        </router-link>
-    </div>
-    <div class="preview">
       <router-link v-bind:to="'/resume/side-bar'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-side-bar.png" />
@@ -95,22 +71,6 @@
       </router-link>
     </div>
     <div class="preview">
-      <router-link v-bind:to="'/resume/purple'">
-        <div class="preview-wrapper">
-          <img src="../assets/preview/resume-purple.png" />
-          <span>purple</span>
-        </div>
-      </router-link>
-    </div>
-    <div class="preview">
-      <router-link v-bind:to="'/resume/creative'">
-        <div class="preview-wrapper">
-          <img src="../assets/preview/resume-creative.png" />
-          <span>creative</span>
-        </div>
-      </router-link>
-    </div>
-    <div class="preview">
       <router-link v-bind:to="'/resume/cool'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-cool.png" />
@@ -131,14 +91,6 @@
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-cool-rtl2.png" />
           <span>cool-rtl2</span>
-        </div>
-      </router-link>
-    </div>
-    <div class="preview">
-      <router-link v-bind:to="'/resume/green'">
-        <div class="preview-wrapper">
-          <img src="../assets/preview/resume-green.png" />
-          <span>green</span>
         </div>
       </router-link>
     </div>

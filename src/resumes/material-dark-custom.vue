@@ -69,7 +69,7 @@
           <i class="fa fa-xing"></i>
         </div>
         <div class="text">
-          <span>{{contactLinks.xing}}</span>        
+          <span>{{person.contact.xing}}</span>        
         </div>
       </div>
     </a>
@@ -80,7 +80,7 @@
           <i class="fa fa-linkedin"></i>
         </div>
         <div class="text">
-          <span>{{contactLinks.linkedin}}</span>        
+          <span>{{person.contact.linkedin}}</span>        
         </div>
       </div>
     </a>

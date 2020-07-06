@@ -61,7 +61,7 @@ const convert = async () => {
             const page = await browser.newPage();
             await page.goto(`http://localhost:${config.dev.port}/#/resume/` + dir.name, {
                 waitUntil: 'networkidle2'
-            });
+            }).catch(console.error);
 
             if (
                 !fs.existsSync(fullDirectoryPath)
@@ -71,8 +71,8 @@ const convert = async () => {
             await page.pdf({
                 path: fullDirectoryPath + dir.name + '.pdf',
                 format: 'A4'
-            });
-            await browser.close();
+            }).catch(console.error);
+            await browser.close().catch(console.error);
         });
     } catch (err) {
         throw new Error(err);

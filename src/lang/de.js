@@ -6,7 +6,7 @@ const lang = {
     experience: 'Berufserfahrung',
     education: 'Schulbildung',
     skills: 'Qualifikationen',
-    projects: 'Projekte',
+    projects: 'Projekt - Weitere auf GitHub',
     contributions: 'Mitarbeit',
     about: 'Über mich',
     languages: 'Sprachen',

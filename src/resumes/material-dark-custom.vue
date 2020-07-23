@@ -134,10 +134,7 @@
     
 
     <div v-if="person.hobbies" class="item">
-      <div class="section-headline">
-        {{ lang.hobbies }}
-      </div>
-    
+      <div class="section-headline">{{ lang.hobbies }}</div>    
       <div 
         v-for="(hobby, index) in person.hobbies"
         class="item"
@@ -145,9 +142,7 @@
           <div class="icon">
             <i :class="hobby.iconClass"></i>
           </div>
-          <div class="text">
-            <span>{{hobby.name}}</span>        
-          </div>
+          <div class="text"><span>{{hobby.name}}</span></div>
       </div>      
     </div>
   </div>
@@ -166,9 +161,7 @@
         <div class="block-helper"></div>
         <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
           <div class="subheadline">{{experience.timeperiod}}</div>
-          <p class="info">
-            {{experience.description}}
-          </p>  
+          <p class="info">{{experience.description}}</p>  
       </a>
     </div>
     <div class="section-headline">{{ lang.education }}</div>
@@ -178,9 +171,17 @@
         <div class="block-helper"></div>
         <h3 class="headline">{{education.degree}} - {{education.school}}</h3>
         <div class="subheadline">{{education.timeperiod}}</div>
-        <p class="info">
-          {{education.description}}
-        </p>
+        <p class="info">{{education.description}}</p>
+      </a>
+    </div>
+    <div class="section-headline">{{ lang.projects }}</div>
+    <div class="block" v-for="project in person.projects" :key="project.name">
+      <a
+      :href="project.website">
+        <div class="block-helper"></div>
+        <h3 class="headline">{{project.name}}</h3>
+        <div class="subheadline">{{project.platform}}</div>
+        <p class="info">{{project.description}}</p>
       </a>
     </div>
   </div>
@@ -223,7 +224,7 @@ a {
   right:25px;
   padding-left:20px;
   padding-top:10px;
-  bottom:25px;
+  bottom:20px;
   h2 {
     text-transform:uppercase;
     display:block;
@@ -338,7 +339,7 @@ h4 {
   display:flex;
   flex-direction:column;
   .experience {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .about {
     display: block;
@@ -352,8 +353,8 @@ h4 {
     position:relative;
     background-color:#ffffff;
     padding:20px;
-    margin-top:5px;
-    margin-bottom:5px;
+    margin-top:3px;
+    margin-bottom:3px;
     display:inline-block;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     .headline {
@@ -372,7 +373,7 @@ h4 {
       font-size:14px;
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
-      padding-top:20px;
+      padding-top:15px;
     }
     .icon {
       width:16%;
